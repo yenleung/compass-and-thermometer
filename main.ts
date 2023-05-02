@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
     temp = input.temperature()
     basic.showNumber(temp)
 })
-basic.forever(function () {
+input.onButtonPressed(Button.B, function () {
     degrees = input.compassHeading()
     if (degrees < 45) {
         basic.showString("N")
@@ -17,4 +17,7 @@ basic.forever(function () {
     } else {
         basic.showString("N")
     }
+})
+basic.forever(function () {
+	
 })
